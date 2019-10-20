@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Libre Franklin', sans-serif, Arial;
+}
+
+#cabeceraPrincipal{
+    width: 100%;
+    height: 180px;
+    background-color: #005883;
+    text-align: center;
+}
+
+#logo{
+    width: 170px;
+    height: 170px;
+    background-image: url("../img/logoUnad.png");
+    background-size: 100% 100%;
+    float: left;
+}
+
+#tituloPrincipal{
+    color: #b3b3b3;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    text-shadow: 1px 1px 10px #000; 
+
+}
+
+#subtituloPrincipal{
+    color: #b3b3b3;
+    font-size: 30px;
+    text-shadow: 1px 1px 20px #000; 
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: #F47920;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 2px 10px 0px #000;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 15px;
+    font-weight: bold;
+}
+
+.navegacion ul{
+    list-style: none;
+}
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    background-color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    color:#ffff;
+}
+
+.menu li a:hover{
+    background-color: #F0B429;
+    transition: all .3s;
+
+}
+
+/*Submenu lecturas*/
+
+.submenuLecturas{
+    position: absolute;
+    background: #333;
+    width: 115%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .8s;
+}
+
+.submenuLecturas li a{
+    display: block;
+    padding: 15px;
+    color:#F47920;
+    text-decoration: none;
+}
+
+.menu li:hover .submenuLecturas{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*Submenu multimedia*/
+
+.submenuMultimedia{
+    position: absolute;
+    background: #333;
+    width: 115%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .8s;
+}
+
+.submenuMultimedia li a{
+    display: block;
+    padding: 15px;
+    color:#F47920;
+    text-decoration: none;
+}
+
+.menu li:hover .submenuMultimedia{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*Submenu submenuActividades*/
+
+.submenuActividades{
+    position: absolute;
+    background: #333;
+    width: 115%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .8s;
+}
+
+.submenuActividades li a{
+    display: block;
+    padding: 15px;
+    color:#F47920;
+    text-decoration: none;
+}
+
+.menu li:hover .submenuActividades{
+    visibility: visible;
+    opacity: 1;
+}
+
+article{
+    width: 100%;
+    height: 1600px;
+}
