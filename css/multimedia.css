@@ -1,0 +1,287 @@
+/* Estilos para paginas de multimedia v1.0 */
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Libre Franklin', sans-serif, Arial;
+}
+
+#cabeceraPrincipal{
+    width: 100%;
+    height: 180px;
+    /* background: #005883; */
+    text-align: center;
+
+    background: linear-gradient(to bottom, #0079b6 0%, #005883 100%);
+}
+
+#logo{
+    width: 190px;
+    height: 170px;
+    background-image: url("../img/logoUnadColor.png");
+    background-size: 100% 100%;
+    float: left;
+    margin: 5px;
+}
+
+#tituloPrincipal{
+    color: #b3b3b3;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    text-shadow: 1px 1px 20px #000; 
+
+}
+
+#subtituloPrincipal{
+    color: #b3b3b3;
+    font-size: 30px;
+    font-weight: bold;
+
+    text-shadow: 1px 1px 20px #000; 
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: #F47920;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 2px 10px 0px #000;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ayuda{
+    width: 40px;
+    height: 30px;
+    background: #F0B429;
+    position: relative;
+    left: 20px;
+    float: right;
+    text-align: center;
+    overflow: hidden;
+
+    
+}
+
+#ayuda a{
+    font-size: 16px;
+    color:#ffff;
+    text-decoration: none;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+#ayuda:hover{
+    width: 200px;
+    border: 1px solid rgb(204, 50, 45);
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: space-around;
+    /* position: relative;
+    top: 15px; */
+    font-weight: bold;
+}
+
+.navegacion ul{
+    list-style: none;
+}
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    background-color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    color:#ffff;
+}
+
+.menu li a:hover{
+    background-color: #F0B429;
+    transition: all .3s;
+
+}
+
+/*Submenu lecturas*/
+
+.submenuLecturas{
+    position: absolute;
+    background: #333;
+    width: 115%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .8s;
+}
+
+.submenuLecturas li a{
+    display: block;
+    padding: 15px;
+    color:#F47920;
+    text-decoration: none;
+}
+
+.menu li:hover .submenuLecturas{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*Submenu multimedia*/
+
+.submenuMultimedia{
+    position: absolute;
+    background: #333;
+    width: 115%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .8s;
+}
+
+.submenuMultimedia li a{
+    display: block;
+    padding: 15px;
+    color:#F47920;
+    text-decoration: none;
+}
+
+.menu li:hover .submenuMultimedia{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*Submenu submenuActividades*/
+
+.submenuActividades{
+    position: absolute;
+    background: #333;
+    width: 115%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .8s;
+}
+
+.submenuActividades li a{
+    display: block;
+    padding: 15px;
+    color:#F47920;
+    text-decoration: none;
+}
+
+.menu li:hover .submenuActividades{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Secciones de lectura */
+
+#seccionMultimedia1{
+    position: relative;
+    width: 100%;
+    height: 800px; /*Ajusta la seccion que contiene articulos*/
+    margin: auto;
+    background: #b3b3b3;
+}
+
+#seccionMultimedia2{
+    position: relative;
+    width: 100%;
+    height: 1200px; /*Ajusta la seccion que contiene articulos*/
+    margin: auto;
+    background: #b3b3b3;
+}
+
+#articuloPrincipalMultimedia1{
+    width: 90%;
+    height: 700px;
+    float: left;
+    border: 2px solid #005883;
+    padding: 5px;
+    position: relative;
+    margin: 40px;
+    left: 20px;   
+    border-radius: 8px;
+} 
+
+#articuloPrincipalMultimedia2{
+    width: 90%;
+    height: 1100px;
+    float: left;
+    border: 2px solid #005883;
+    padding: 5px;
+    position: relative;
+    margin: 40px;
+    left: 20px;   
+    border-radius: 8px;
+} 
+
+#tituloArticulo{
+    color: rgb(39, 39, 39);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    text-shadow: 1px 1px 10px rgb(126, 126, 126);
+    text-align: center;
+
+}
+
+#subtituloArticulo{
+    color: rgb(39, 39, 39);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    text-shadow: 1px 1px 10px rgb(126, 126, 126);
+    text-align: center;
+}
+
+#descripcionArticulo{
+    color: rgb(39, 39, 39);
+    font-size: 20px;
+    text-shadow: 1px 1px 10px rgb(126, 126, 126);
+    
+}
+
+#descripcionArticulo a{
+    color: #005883;
+}
+
+#descripcionArticulo a:hover{
+    color: #F47920;
+}
+
+#video{
+    width: 560px;
+    height: 315px;
+    background-size: 100% 100%;
+    margin: auto;
+    border: solid 5px #F47920;
+}
+
+/* Pie de pagina */
+
+footer{
+    width: 100%;
+    height: 100px;
+    background: #A54686;
+    text-align: center;
+    font-size: 20px;
+    color: #F0B429;
+    text-shadow: 1px 1px 10px #000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
