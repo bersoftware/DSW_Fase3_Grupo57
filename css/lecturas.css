@@ -192,14 +192,14 @@ header{
 section{
     position: relative;
     width: 100%;
-    height: 600px; /*Ajusta la seccion que contiene articulos*/
+    height: 1000px; /*Ajusta la seccion que contiene articulos*/
     margin: auto;
     background: #b3b3b3;
 }
 
 #articuloPrincipal{
     width: 90%;
-    height: 350px;
+    height: auto;
     float: left;
     border: 2px solid #005883;
     padding: 5px;
@@ -234,13 +234,47 @@ section{
     color: #F47920;
 }
 
-#imageneArticulo{
+/*Imagenes de las lecturas*/
+#imageneArticuloLectura1{
+    width: 200px;
+    height: 180px;
+    background-image: url("../img/git.jpg");
+    background-size: 100% 100%;
+    margin: auto;
+}
+
+#imageneArticuloLectura2{
+    width: 300px;
+    height: 200px;
+    background-image: url("../img/htm.jpg");
+    background-size: 100% 100%;
+    margin: auto;
+}
+
+#imageneArticuloLectura3{
+    width: 500px;
+    height: 300px;
+    background-image: url("../img/cs.png");
+    background-size: 100% 100%;
+    margin: auto;
+}
+
+#imageneArticuloLectura4{
     width: 100px;
     height: 100px;
     background-image: url("../img/github.png");
     background-size: 100% 100%;
     margin: auto;
 }
+
+#imageneArticuloLectura5{
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/github.png");
+    background-size: 100% 100%;
+    margin: auto;
+}
+
 
 /* Pie de pagina */
 
